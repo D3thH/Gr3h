@@ -1,8 +1,8 @@
 const names = ["فهد", "صابر", "متعب","رفيف","طمية"];
-
+var rmainng = 5;
 
 function buton(){
-    var rmainng = 5;
+
     var name = document.getElementById("inputtext").value;
 
 
@@ -16,13 +16,13 @@ function buton(){
         buton();
     }
     else if (names[ran] == "gone") {
-        buton()
+        buton();
     }
     else {
-        alert(" طلع لك " + names[ran] )
+        alert(" طلع لك " + names[ran] );
         names[ran] = "gone";
-        rmainng --;
-        inputtext.value=""
-        document.getElementById('rmainngid').value =(rmainng);
+        rmainng--;
+        inputtext.value="";
+        document.getElementById('rmainngid').innerHTML =(rmainng);
     }
 }
